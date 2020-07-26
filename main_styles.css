@@ -1,0 +1,32 @@
+.img, .slider{
+	width: 600px;
+	height: 300px;
+	float: left;
+	position: absolute;
+	overflow: hidden;
+}
+
+.lister{
+	position: relative;
+	float: left;
+	font-size: 47pt;
+	font-family: cursive;
+	font-style: Comic Sans;
+	color: white;
+	cursor: pointer;
+	transform: translateY(+100%);
+	border-width: 0px;
+	outline: none;
+	background: rgba(0, 0, 0, 0);
+}
+
+.test{
+	width: 10%;
+	position: absolute;
+	top: 400px;
+	background-color: #6fc;
+}
+
+.t2{
+	top: 420px;
+}
