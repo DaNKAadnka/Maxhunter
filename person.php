@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+<head>
+	
+	<title>Personal cabinet</title>
+
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-    <title>Aniprog</title>
-	<!-- Our CSS -->
-	<link rel="stylesheet" href="css/main_styles.css">
-	<style>
-		a {
+
+    <style>
+    	a {
 			cursor:pointer;
 		}
-	</style>
-  </head>
-  <body style="background-image: url(https://html5book.ru/wp-content/uploads/2016/09/background76.png);">
+		#person {
+			min-height: 80%;
+		}
+    </style>
+</head>
+<body style="background-image: url(https://html5book.ru/wp-content/uploads/2016/09/background76.png);">
 	<!-- Header -->
 	<nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
-	  	<a class="navbar-brand col-1" href="">
+	  	<a class="navbar-brand col-1" href="index.php">
 	 	 	Aniprog
 		</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,6 +51,55 @@
 	  </div>
 	</nav>
 
+
+	<div class="container bg-light mt-5" id="person">
+		<h1>Личный кабинет</h1>
+		<div class="mn_inf row">
+			<img class="col-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScdHD-KQQkMQdJcXTSALcRVFp7chjRbA0e-w&usqp=CAU" alt="">
+			<div class="col-6">
+				<div class="row mt-3 ml-4" id="inf-1">
+					<h6 class="col-3 text-info"> Login:</h6>
+					<div class="d-inline-block col-5" id="persNM-1">None</div>
+					<a class="chng chng-1 text-success">Изменить</a>
+				</div>
+				<div class="row mt-3 ml-4" id="inf-2">
+					<h6 class="col-3 text-info"> Email:</h6>
+					<div class="d-inline-block col-5" id="persNM-2">None</div>
+					<a class="chng chng-2 text-success">Изменить</a>
+				</div>
+				<div class="row mt-3 ml-4" id="inf-3">
+					<h6 class="col-3 text-info"> Name:</h6>
+					<div class="d-inline-block col-5" id="persNM-3">None</div>
+					<a class="chng chng-3 text-success">Изменить</a>
+				</div>
+				<div class="row mt-3 ml-4" id="inf-4">
+					<h6 class="col-3 text-info"> Surname:</h6>
+					<div class="d-inline-block col-5" id="persNM-4">None</div>
+					<a class="chng chng-4 text-success">Изменить</a>
+				</div>
+				<div class="row mt-3 ml-4" id="inf-5">
+					<h6 class="col-3 text-info"> City:</h6>
+					<div class="d-inline-block col-5" id="persNM-5">None</div>
+					<a class="chng chng-5 text-success">Изменить</a>
+				</div>
+				<div class="row mt-3 ml-4" id="inf-6">
+					<h6 class="col-3 text-info"> Country:</h6>
+					<div class="d-inline-block col-5" id="persNM-6">None</div>
+					<a class="chng chng-6 text-success">Изменить</a>
+				</div>
+				<div class="row mt-3 ml-4" id="inf-7">
+					<h6 class="col-3 text-info"> Job:</h6>
+					<div class="d-inline-block col-5" id="persNM-7">None</div>
+					<a class="chng chng-7 text-success">Изменить</a>
+				</div>
+				<div class="row mt-3 ml-4" id="inf-8">
+					<h6 class="col-3 text-info"> Gender:</h6>
+					<div class="d-inline-block col-5" id="persNM-8">None</div>
+					<a class="chng chng-8 text-success">Изменить</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<!-- Modal windows -->
 	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -84,41 +136,32 @@
 	    </div>
 	  </div>
 	</div>
-	
-	<!-- Some content -->
-	<div class="container bg-light mt-5 rounded border border-secondary">
-		<h1>Здравствуйте, вы на сайте aniprog.org</h1>
-		<h6>Этот сайт задумывается как практика в портфолио</h6>
-		<img class="" src="https://ramki-photoshop.ru/personaj/2/ludi-clipart-24.png" style="width:80%; height:50%" alt="This is a cute anime girl">
-	</div>
 
-	<div class="container bg-light mt-5 rounded border border-secondary">
-		<h1>Проводи время с душой!</h1>
-		<h6>Надеемся, что вы найдете что-нибудь интересное на нашем сайте!</h6>
-		<img class="" src="https://coubsecure-s.akamaihd.net/get/b27/p/coub/simple/cw_timeline_pic/50bc8495f10/b34b973c0e3dd2017875b/med_1517614372_image.jpg" style="width:80%; height:50%" alt="This is a cute anime girl">
-	</div>
 
 	<!-- Footer -->
-	<footer class="page-footer font-small bg-dark mt-5">
+	<footer class="navbar fixed-bottom bg-dark">
 		
-	  <!-- Copyright -->
-	  <div class="footer-copyright text-center text-lignt py-3 border border-light">
-	  	<div class="text-light d-inline-block">© 2020 Copyright:</div>
-	    <a style="text-decoration: none;" class="text-light" href=""> aniprog.org</a>
-	    <img class="rounded-circle ml-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqWlUIhhzXQN2_YnH0W_LxGknx5YuHgCbLew&usqp=CAU" alt="" style="width:50px; height: 50px;">
-	  </div>
+		<a class="navbar-brand" href="index.php">
+			<img class="rounded-circle ml-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqWlUIhhzXQN2_YnH0W_LxGknx5YuHgCbLew&usqp=CAU" alt="" style="width:50px; height: 50px;">
+		</a>
+	  	<!-- Copyright -->
+	  	<div class="text-lignt py-3">
+	  		<div class="text-light d-inline-block">© 2020 Copyright:</div>
+	    	<a style="text-decoration: none;" class="text-light" href=""> aniprog.org</a>
+	    	
+	  	</div>
 	  <!-- Copyright -->
 
 	</footer>
-	
+
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>	
-		
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
     <!-- Our scripts -->
 	<script src="jquery-3.5.1.min.js"></script>
-	<script src="js/main.js"></script>
-  </body>
+	<script src="js/personal.js"></script>
+</body>
 </html>
