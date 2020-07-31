@@ -7,6 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    
+
+    <link rel="shortcut icon" href="https://c7.hotpng.com/preview/287/944/836/t-shirt-anime-drawing-manga-clip-art-mouth-smile.jpg" type="image/x-icon">
     
     <title>Aniprog</title>
 	<!-- Our CSS -->
@@ -30,7 +35,7 @@
 	  <div class="collapse navbar-collapse row" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item col-5">
-	        <a class="nav-link">Articles</a>
+	        <a class="nav-link" href="articles.php">Articles</a>
 	      </li>
 	      <li class="nav-item col-2">
 	        <a class="nav-link">Messeges</a>
@@ -41,7 +46,7 @@
 		   		<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalLong" id="a_bx">Log in / Set up</button>
 			</li>
 			<li class="nav-item ff1 row mr-3" hidden="">
-				<a class="nav-link d-inline-block" id="logout">Выйти</a>
+				<a class="nav-link d-inline-block" id="logout" href="articles.php">Выйти</a>
 			</li>
 		</ul>
 	    
@@ -51,25 +56,23 @@
 	
 	<!-- Modal windows -->
 	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
+	  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLongTitle">Log in</h5>
+	        <h5 class="modal-title" id="exampleModalLongTitle">Log in or set up</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline: none;">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	      	<form id="modalform">
+	      	<form id="logform">
 	      		<div class="form-group row d-flex justify-content-center">
-			    	<label for="inputName" class="col-sm-3 col-form-lable">Name:</label>
-				    <div class="col-sm-6">
+				    <div class="col-sm-6 mt-3 mb-3">
 				      	<input type="text" class="form-control" id="staticEmail" placeholder="Name">
 				    </div>
 				</div>
 				<div class="form-group row d-flex justify-content-center">
-				    <label for="inputPassword" class="col-sm-3 col-form-label">Password:</label>
-				    <div class="col-sm-6">
+				    <div class="col-sm-6 mt-3 mb-3">
 				      	<input type="password" class="form-control" id="inputPassword" placeholder="Password">
 				    </div>
 				</div>
@@ -77,8 +80,8 @@
 	        
 	      </div>
 	      <div class="modal-footer">
-		  	<button type="button" class="btn btn-success" id="log_b-1">Log In</button>
-		  	<button type="button" class="btn btn-success" id="log_b-2">Set up</button>
+		  	<button type="button" class="btn btn-outline-success" id="log_b-1">Log In</button>
+		  	<button type="button" class="btn btn-outline-success" id="log_b-2">Set up</button>
 	      </div>
 	      <h6 class="alert" hidden id="is_loged"></h6>
 	    </div>
@@ -89,13 +92,13 @@
 	<div class="container bg-light mt-5 rounded border border-secondary">
 		<h1>Здравствуйте, вы на сайте aniprog.org</h1>
 		<h6>Этот сайт задумывается как практика в портфолио</h6>
-		<img class="" src="https://ramki-photoshop.ru/personaj/2/ludi-clipart-24.png" style="width:80%; height:50%" alt="This is a cute anime girl">
+		<img class="img-thumbnail" src="https://ramki-photoshop.ru/personaj/2/ludi-clipart-24.png" style="width:80%; height:50%" alt="This is a cute anime girl">
 	</div>
 
 	<div class="container bg-light mt-5 rounded border border-secondary">
 		<h1>Проводи время с душой!</h1>
 		<h6>Надеемся, что вы найдете что-нибудь интересное на нашем сайте!</h6>
-		<img class="" src="https://coubsecure-s.akamaihd.net/get/b27/p/coub/simple/cw_timeline_pic/50bc8495f10/b34b973c0e3dd2017875b/med_1517614372_image.jpg" style="width:80%; height:50%" alt="This is a cute anime girl">
+		<img class="img-thumbnail" src="https://coubsecure-s.akamaihd.net/get/b27/p/coub/simple/cw_timeline_pic/50bc8495f10/b34b973c0e3dd2017875b/med_1517614372_image.jpg" style="width:80%; height:50%" alt="This is a cute anime girl">
 	</div>
 
 	<!-- Footer -->

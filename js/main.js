@@ -1,3 +1,5 @@
+// Main jsd
+
 let is_l = false;
 let name = "";
 let password = "";
@@ -31,6 +33,7 @@ $("#log_b-1").click(function() {
 		success: function(data) {
 			let Allert = $("#is_loged");
 			Allert.removeAttr('hidden');
+			// console.log(Allert.text());
 			if (data == "true") {
 				is_l = true;
 				name = nm;
@@ -43,6 +46,7 @@ $("#log_b-1").click(function() {
 				Allert.removeClass("alert-success");
 				Allert.text("Неверный логин или пароль");
 			}
+			// console.log(Allert.attr("hidden"));
 		}
 	});
 });
@@ -75,21 +79,22 @@ $("#log_b-2").click(function() {
 	});
 });
 
-$(".close").click(function() {
+$(".close, #ch_i").click(function() {
 	let Alert = $("#is_loged");
 	Alert.attr("hidden", "true");
-	console.log("close");
+	// console.log("close");
 	if (is_l) {
 		$("#a_bx").attr("hidden", "true");
 		let bb = $(".form_log");
 		bb.append("<a href='person.php' class='nav-link mr-2 d-inline-block' id='timedtext'>" + String(name) + "</a>");
 		$(".ff1").removeAttr('hidden');
 	}
+	$(".dropdown-toggle").text("Your Gender");
 
 });
 
 $("#logout").click(function() {
-	$('#modalform')[0].reset();
+	$('#logform')[0].reset();
 	is_l = false;
 	name = "";
 	password = "";
@@ -101,7 +106,7 @@ $("#logout").click(function() {
 		type: 'post',
 		data: {},
 		success : function(data) {
-			console.log("Bye");
+			// console.log("Bye");
 		}
 	});
 });

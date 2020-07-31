@@ -1,5 +1,5 @@
 <?php
-	$server = "erel1.ru";
+	$server = "aniprog.org";
 	$db = "users";
 	$user = "root";
 	$pass = "";
@@ -11,9 +11,10 @@
 
 	$name = $_GET["name"];
 	$pass = $_GET["pass"];
+	$pss = md5($pass);
 	$sql = "SELECT * FROM logins WHERE user=? && password=?";
 	$query = $pdo -> prepare ($sql);
-	$query -> execute([$name, $pass]);
+	$query -> execute([$name, $pss]);
 	
 	$bool;
 	$users = $query -> fetchAll();
